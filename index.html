@@ -3,10 +3,10 @@
 <title>Videogames</title>
 <meta charset="utf-8">
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Dancing+Script&display=swap');
 body {
   margin: 0px;
 }
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 /*headline color: 00F5FF*/
 .headline {
   min-height: 80vh;
@@ -27,7 +27,7 @@ body {
   font-family: "Bebas Neue", cursive;
   text-shadow: 5px 5px 5px #FF00FF, -5px 5px 5px #FF00FF, -5px -5px 5px #FF00FF,
     5px -5px 5px #FF00FF;
-    font-size: 80px;
+    font-size: 120px;
 }
 
 .navigation {display: grid;
@@ -56,10 +56,10 @@ min-height: 50px;
 
 
 
-.nav1-item:hover {
-  background-color: #555;
-  color: white;
+.linkT:hover {
 
+  color: #00F5FF;
+}
 .pictureT1 {
   min-height: 50vh;
   max-width: 100vh;
@@ -73,16 +73,38 @@ min-height: 50px;
   min-height: 50px:
 }
 .TypeGame {
-  font-size: 34px;
-  border-radius: 50px 50px;
+  font-family: "Bungee", cursive;
+
+  text-align: center;
+  background-color: rgba(234, 215, 209, 0.9);
+  font-size: 30px;
+  border-radius: 30px 30px;
   border: solid 5px black;
   max-width: 450px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  text-decoration: none;
-  text-decoration-color: blue;}
 }
+.ranking {
+    font-family: "Bungee", cursive;
+
+    text-align: center;
+    background-color: rgba(234, 215, 209, 0.9);
+    font-size: 20px;
+    border-radius: 20px 20px;
+    border: solid 2px black;
+    max-width: 450px;
+    margin-right: auto;
+
+
+    text-align: left;
+    list-style: none;
+}
+.linkT {
+  text-decoration: none;
+  color: blue;
+}
+
 
 </style>
 </head>
@@ -95,9 +117,10 @@ min-height: 50px;
 </div>
 
 <div class="navigation">
-  <div class="nav1-item" href="#pcGames">
-
+  <div class="nav1-item" >
+<a class="linkT" href="#pcGames">
         PC Games
+      </a>
   </div>
 
 
@@ -130,12 +153,19 @@ min-height: 50px;
 
     <h3 class="TypeGame" id="pcGames"> PC Games</h3>
     <div class="description">
-<ol class="ranking">
-<li> Grand Theft Auto 5</li>
-  <li> Overwatch</li>
-    <li> Minecraft</li>
+<ol>
+  <li class="ranking"> Grand Theft Auto 5</li>
+  <p>hier wird bald ein Text stehen....
+
+
+
+
+
+  </p>
+  <li class="ranking"> Overwatch</li>
+  <li> Minecraft</li>
 </ol>
-    </div>
+</div>
 
   <div class="pictureT1">
     <img src="https://www.pdvg.it/wp-content/uploads/2021/06/ROG-phone-2-review-pros-and-cons-india-17.jpeg">
