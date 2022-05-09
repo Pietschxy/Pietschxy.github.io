@@ -39,12 +39,10 @@
       font-size: 120px;
     }
 
-    .navigation {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      text-decoration: none;
-      margin-left: auto;
-      margin-right: auto;
+    .navbar-nav {
+
+      text-decoration-color: white;
+
 
       margin: auto;
       overflow: hidden;
@@ -58,26 +56,28 @@
 
 
 
-    .nav1-item {
+    .nav-item {
       min-height: 30px;
       text-decoration: none;
-      color: blue;
+      color: black;
       background-color: white;
       text-align: center;
       margin-top: auto;
       margin-bottom: auto;
-      border: 5px solid #7A378B;
       font-family: "Bebas Neue", cursive;
       font-size: 30px;
 
     }
 
 
+.container-fluid {
+  padding: 0px;
+}
 
 
-    .linkT:hover {
+    .nav-link:hover {
 
-      color: #00F5FF;
+       background-color: #00F5FF;
     }
 
     .pictureT1 {
@@ -100,7 +100,7 @@
       font-family: "Bungee", cursive;
 
       text-align: center;
-      background-color: rgba(234, 215, 209, 0.9);
+      background-color: rgba(, 0.9);
       font-size: 30px;
       border-radius: 30px 30px;
       border: solid 5px black;
@@ -138,45 +138,36 @@
 
 </head>
 
-<body>
-
-  <div class="headline">
-    <div class="headline-overlay">
-      <div class="headline-content">Video Games</div>
-    </div>
-  </div>
-<div class="row">
-  <div class="navigation">
-    <div class="nav1-item">
-      <a class="linkT" href="#pcGames">
-        PC Games
-      </a>
-    </div>
-
-
-
-    <div class="nav1-item">
-
-      Mobile Games
-    </div>
-
-
-
-    <div class="nav1-item">
-
-      Console Games
-    </div>
-
-
-
-    <div class="nav1-item">
-
-      About us
-    </div>
-
-  </div>
-</div>
-
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        	<div class="headline col-sm-12">
+            <div class="headline-overlay">
+              <div class="headline-content">Video Games</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <nav class="navbar navbar-expand-sm bg-light navbar-light">
+              <ul class="navbar-nav" class="col-sm-12">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#pcGames">PC Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Console Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Mobile Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">About us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
 
   <div class="texts">
     <h3 class="TypeGame" id="pcGames"> PC Games</h3>
@@ -201,4 +192,5 @@
 
     </div>
   </div>
+</div>
 </body>
